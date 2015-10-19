@@ -1,0 +1,40 @@
+<footer id="footer" class="site-footer">
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-xs-24 flex-container">
+        <div class="logo">
+          <img src="/images/helpernet_logo.png" alt="">
+        </div>
+
+        <div class="contact">
+          <div class="contact-text">
+            <span class="icon github"></span>
+            <a href="http://github.com{{ site.data.contact.github }}" target="_blank">{{ site.data.contact.github }}</a>
+          </div>
+          <div class="contact-text">
+            <span class="icon email"></span>
+            <a href="mailto:{{ site.data.contact.email }}">{{ site.data.contact.email }}</a>
+          </div>
+          <div class="contact-text">
+            <span class="icon phone"></span>
+            {{ site.data.contact.phone }}
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- end row -->
+
+    <div class="row">
+      <div class="footer-line">
+        <span class="copyright">&copy; {{ site.time | date: '%Y' }} {{ site.author }}</span>
+        <span class="impress">
+          <a href="/impressum">Impressum</a>
+          <a href="/datenschutz">Datenschutz</a>
+        </span>
+      </div>
+    </div>
+  </div>
+
+</footer>
